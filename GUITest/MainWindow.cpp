@@ -11,7 +11,7 @@ MainWindow::MainWindow(wxWindow* parent,
 {
 
 }
-
+//test
 MainWindow::~MainWindow()
 {
 

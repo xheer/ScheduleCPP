@@ -14,7 +14,7 @@ bool App::OnInit()
 	if (!wxApp::OnInit())
 		return false;
 
-	MainWindow *main = new MainWindow(nullptr, window::id::MAINWINDOW, _("Main Window"));
+	MainWindow *main = new MainWindow(nullptr, window::id::MAINWINDOW, _("App.cpp"));
 	main->Show();
 	return true;
 }

@@ -2,4 +2,5 @@
   App.cpp
   MainWindow.cpp
   Generating Code...
-  GUITest.vcxproj -> C:\Users\Matthew\Documents\Coding\ScheduleCPP\x64\Debug\Frontend.exe
+  LINK : C:\Users\somet\OneDrive\Desktop\ScheduleCPP\x64\Debug\Frontend.exe not found or not built by the last incremental link; performing full link
+  GUITest.vcxproj -> C:\Users\somet\OneDrive\Desktop\ScheduleCPP\x64\Debug\Frontend.exe

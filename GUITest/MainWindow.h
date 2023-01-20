@@ -16,5 +16,13 @@ public:
         long style = wxDEFAULT_FRAME_STYLE,
         const wxString& name = wxASCII_STR(wxFrameNameStr));
 	~MainWindow();
+
+    //For each button create a new event handler
+    void onNew(wxCommandEvent& event); //this needs to be above the declaration
+    void onTest(wxCommandEvent& event);
+    void onQuit(wxCommandEvent& event);
+    void onClose(wxCloseEvent& event);
+
+    DECLARE_EVENT_TABLE()
 };
 

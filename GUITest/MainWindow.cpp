@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+#include "TestDialog.h"
 
 BEGIN_EVENT_TABLE(MainWindow, wxFrame) //class for event window and its parent
     EVT_MENU(wxID_NEW, MainWindow::onNew) //(id that was appended, event handler)
@@ -110,9 +111,18 @@ void MainWindow::onNew(wxCommandEvent& event)
     wxMessageBox("MainWindow::onNew");
 }
 
-void MainWindow::onTest(wxCommandEvent& event)
+void MainWindow::onTest(wxCommandEvent& WXUNUSED(event))
 {
-    wxMessageBox("MainWindow::onTest");
+    //wxMessageBox("MainWindow::onTest");
+    TestDialog dlg(this, wxID_ANY, _("This is a Dialog"));
+
+    if (dlg.ShowModal() == wxID_OK)
+    {
+        wxMessageBox(wxString::Format("FieldA = %s'\nFieldB = %s'\nFieldC = %s'\n",
+            dlg.getFieldA(), dlg.getFieldB(), dlg.getFieldC()));
+    }
+
+
 }
 
 void MainWindow::onQuit(wxCommandEvent& event)
